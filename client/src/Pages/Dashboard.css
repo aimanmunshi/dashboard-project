@@ -1,0 +1,138 @@
+/* Container for the entire dashboard */
+.dashboard-container {
+  max-width: 1200px;         /* Limit total width for better readability */
+  margin: 0 auto;            /* Center container horizontally */
+  padding: 30px 24px;        /* Top/bottom padding: 30px | Left/right: 24px */
+  background-color: #f5f9ff;
+  min-height: calc(100vh - 60px); /* Adjust if header height changes */
+  box-sizing: border-box;    /* Ensure padding doesn't overflow width */
+}
+
+
+/* Header stat section */
+.top-stats {
+  display: flex;
+  gap: 30px;
+  margin: 5px 0;
+  justify-content: flex-start; /* Aligns items to the left */
+  flex-wrap: wrap;
+}
+
+/* Individual stat box */
+.stat-box {
+  background: #f5f9ff;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 120px;
+  width: 120px;
+}
+
+.stat-box p {
+  color: #555;
+  margin-bottom: 8px;
+  font-size: 14px; /* Slightly reduced for better scaling */
+}
+
+.stat-value {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Color classes for stat values */
+.last-month {
+  color: #2ad2c9;
+}
+
+.this-month {
+  color: #007bff;
+}
+
+/* Grid layout for charts */
+.chart-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+/* Individual chart container */
+.chart-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Make a chart (e.g., VisitorsChart) smaller */
+.chart-box.small {
+  flex: 0 0 40%;
+}
+
+/* Optional: Consistent card appearance (can be used for other boxes if needed) */
+.chart-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 100%;
+}
+
+.newsletter-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.newsletter-chart-box {
+  flex: 2;
+  min-width: 0;
+}
+
+.news-card-box {
+  flex: 1;
+  min-width: 280px;
+}
+
+
+.infobox-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.infobox-row > div {
+  flex: 1;
+  min-width: 250px;
+}
+
+.profile-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.profile-tabs-box {
+  flex: 2;
+  min-width: 0;
+}
+
+.profile-card-box {
+  flex: 1;
+  min-width: 280px;
+}
+
+
+
+
+

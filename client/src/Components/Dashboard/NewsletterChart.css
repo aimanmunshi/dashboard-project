@@ -1,0 +1,76 @@
+.newsletter-chart-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 1px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+.newsletter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+/* === Left-aligned Legend === */
+.legend-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.legend-label {
+  font-size: 14px;
+  color: #444;
+}
+
+/* === Right-aligned Title === */
+.newsletter-title {
+  text-align: right;
+}
+
+.newsletter-title h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.newsletter-title p {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  color: #777;
+}
+
+/* === Bottom Stats === */
+.newsletter-metrics {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.metric-box h2 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.metric-box p {
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+  margin: 4px 0 0 0;
+}

@@ -1,0 +1,13 @@
+# Root-level ignores
+node_modules/
+.env
+.DS_Store
+
+# React frontend ignores
+client/node_modules/
+client/build/
+client/.env
+
+# Express backend ignores
+server/node_modules/
+server/.env

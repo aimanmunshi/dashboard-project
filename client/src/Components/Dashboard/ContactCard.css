@@ -1,0 +1,155 @@
+.contact-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 436px;
+  box-sizing: border-box;
+  margin-top: 16px;
+  margin-left: 4px;
+  text-align: left;
+  overflow: hidden;
+  align-items: flex-end;
+}
+
+.contact-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  text-align: right;        /* 🠖 Right-align text */
+  align-self: flex-end;
+}
+
+.contact-card .subtitle {
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  text-align: right;        /* 🠖 Right-align text */
+  align-self: flex-end;
+}
+
+.contact-scroll {
+  flex: 1;
+  overflow-y: auto;
+  width: 100%;
+  padding-right: 4px; /* to avoid scrollbar overlap */
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+
+.contact-avatar {
+  position: relative;
+  margin-right: 12px;
+}
+
+.contact-avatar img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.status-dot {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.status-dot.red {
+  background-color: #f44336;
+}
+
+.status-dot.green {
+  background-color: #4caf50;
+}
+
+.status-dot.blue {
+  background-color: #2196f3;
+}
+
+.contact-details {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-name {
+  background: none;
+  border: none;
+  font-weight: 300;
+  font-size: 15px;
+  color: #222;
+  cursor: pointer;
+  text-align: right;
+  padding: 0;
+}
+
+.contact-status {
+  font-size: 12px;
+  color: #888;
+}
+
+.call-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-btn {
+  background: #e6f0ff;
+  color: #007bff;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn.video {
+  background: #ffe6f0;
+  color: #ff4b77;
+}
+
+.contact-row:hover {
+  background-color: #f5f7fa;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background: #cce0ff;
+}
+
+.icon-btn.video:hover {
+  background: #ffc2d4;
+}
+
+
+
+

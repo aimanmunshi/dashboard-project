@@ -1,0 +1,34 @@
+.sales-chart-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 370px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sales-header {
+  margin-bottom: 12px;
+}
+
+.sales-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sales-header p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #777;
+}
+
+/* NEW */
+.sales-chart-body {
+  flex: 1;
+  min-height: 0;
+}
+
+
