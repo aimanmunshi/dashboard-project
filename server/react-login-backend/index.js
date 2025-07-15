@@ -8,6 +8,11 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+  res.send('API is working ✅');
+});
+
+
 // PostgreSQL connection
 const pool = new Pool({
   user: process.env.DB_USER,
