@@ -1,42 +1,42 @@
-import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-import './LoginSignup.css';
-import user_icon from '../Assets/person.png';
-import email_icon from '../Assets/email.png';
-import password_icon from '../Assets/password.png';
+import React, { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
+import "./LoginSignup.css";
+import user_icon from "../Assets/person.png";
+import email_icon from "../Assets/email.png";
+import password_icon from "../Assets/password.png";
 
 const Signup = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleSignup = async () => {
-  if (!name || !email || !password) {
-    alert('Please fill all fields');
-    return;
-  }
-
-  try {
-    const response = await fetch('http://localhost:5000/signup', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, email, password }),
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      alert('Signup successful!');
-      navigate('/');
-    } else {
-      alert(data.message);
+    if (!name || !email || !password) {
+      alert("Please fill all fields");
+      return;
     }
-  } catch (err) {
-    console.error('Signup error:', err);
-    alert('An error occurred. Please try again.');
-  }
-};
+
+    try {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/signup`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, password }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        alert("Signup successful!");
+        navigate("/");
+      } else {
+        alert(data.message);
+      }
+    } catch (err) {
+      console.error("Signup error:", err);
+      alert("An error occurred. Please try again.");
+    }
+  };
 
   return (
     <div className="container">
@@ -73,10 +73,15 @@ const Signup = () => {
           />
         </div>
 
-        <button className="login-btn" onClick={handleSignup}>Sign Up</button>
+        <button className="login-btn" onClick={handleSignup}>
+          Sign Up
+        </button>
 
         <p className="switch-text">
-          Already have an account? <Link to="/" className="switch-link">Login</Link>
+          Already have an account?{" "}
+          <Link to="/" className="switch-link">
+            Login
+          </Link>
         </p>
       </div>
     </div>
