@@ -14,9 +14,11 @@ A responsive dashboard web application built using:
 
 ## 🖼️ Project Preview
 
-> Replace with actual screenshots or live link once deployed
+### 📱 Login Page
+![Login Page](./preview/login-screenshot.png)
 
-![Dashboard Screenshot](./preview/dashboard-screenshot.png)
+### 🧩 Main Dashboard View
+![Main Dashboard](./preview/dashboard-screenshot.png)
 
 ---
 
